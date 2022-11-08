@@ -17,32 +17,33 @@ html, body {
 
 #yellow-box {
     background-color: #ffff00;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
+ 
+    position: static;
+    bottom: 10px;
+    left: 500px;
     right: 0;
     top: 0;
-    z-index: ;
+
+    /* margin-top: 10px; */
+    /* z-index: ; */
 }
 
 #pink-box {
     background-color: #ff69b4;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
+   
+    position: relative;
+    bottom: 10px;
+    left: 50px;
     right: 0;
     top: 0;
-    z-index: ;
+    /* z-index: ; */
 }
 
 #blue-box {
     background-color: #00eeee;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 60;
     right: 0;
     top: 0;
     z-index: ;
