@@ -1,3 +1,13 @@
+/* Calculating Specificity */
+
+/* 
+    the number of tag selectors in the selector - 1pt
+    the number of class, pseudo-element, and attribute selectors in the selector - 10pts
+    the number of id selectors in the selector - 100pts
+    is this an inline style - Max pts
+*/
+
+
 /* Your code here */
 #page-title {
     font-weight: bold;
