@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Roboto:ital,wght@1,100&display=swap');
+
 html, body {
-    font-family: sans-serif;
+    font-family: 'Roboto' sans-serif;
 }
 
 .container {
     background-color: #2b2d2f;
     position: relative;
+    height: 150px;
 }
 
 .element {
@@ -25,7 +28,7 @@ html, body {
     top: 0;
 
     /* margin-top: 10px; */
-    /* z-index: ; */
+    z-index: -100;
 }
 
 #pink-box {
@@ -36,37 +39,37 @@ html, body {
     left: 50px;
     right: 0;
     top: 0;
-    /* z-index: ; */
+    z-index: -10;
 }
 
 #blue-box {
     background-color: #00eeee;
     position: absolute;
     bottom: 10px;
-    left: 60;
+    left: 60px;
     right: 0;
     top: 0;
-    z-index: ;
+    z-index: -2;
 }
 
 #red-box {
     background-color: #ff0000;
-    /* Fill these in
-    position: ;
+    /* /* Fill these in */
+    position: fixed;
     bottom: 0;
-    left: 0;
+    left: 200px;
     right: 0;
-    top: 0;
-    z-index: ;
+    top: 40px;
+    z-index: -5;
 }
 
 #orange-box {
     background-color: #ffa500;
-    /* Fill these in
-    position: ;
+ 
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 0;
-    z-index: ;
+    top: 50px;
+    z-index: -4;
 }
