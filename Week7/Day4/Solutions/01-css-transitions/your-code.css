@@ -1,0 +1,84 @@
+/* ===== Problem 1 ===== */
+
+/*
+ 1. define two states 
+    ie .rocket_svg & .rocket_svg:hover
+ 2. apply the transition 
+    property to the original (or first) 
+    state. ie: rocket_svg.
+
+ 3. specify what property to listen on
+    the transition. 
+*/
+
+
+.rocket_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+    /* Your code here */
+    /* transition: rotate 2s; */
+    transition: transform 2s 1s cubic-bezier(0, 1.61, 1, -0.55);
+}
+
+
+.rocket_svg:hover {
+    /* rotate: 250deg; */
+    transform: rotate(250deg);
+}
+/* Create rocket hover animation here
+
+
+/* ===== Problem 2 ===== */
+
+.astronaut_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 200px;
+    /* Your code here */
+    transition: transform 2s, height 4s;
+}
+
+.astronaut_svg:hover {
+    /* transform: translate(100px, 0) */
+    transform: translateX(100px);
+    height: 500px;
+}
+
+/* Create astronaut hover animation here
+
+/* ======= BONUS ======= */
+
+.earth_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+   /* from {
+    transform: rotate(0deg);
+   } */
+
+   0% {
+    transform: rotate(0deg);
+   }
+
+   /* 25% {
+    height: 500px;
+   }
+
+   75% {
+    margin-left: 3px;
+   } */
+
+   100% {
+    transform: rotate(360deg);
+   }
+
+   /* to {
+    transform: rotate(360deg);
+   } */
+}
