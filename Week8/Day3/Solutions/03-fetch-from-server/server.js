@@ -34,6 +34,7 @@ const server = http.createServer((req, res) => {
     }
   }
 
+  // /dogs/:dogId/delete
   if (req.method === "POST" && /dogs\/\d+\/delete/.test(req.url)) {
     const [_,urlParts] = req.url.split("/dogs/");
     const [id,__] = urlParts.split("/");

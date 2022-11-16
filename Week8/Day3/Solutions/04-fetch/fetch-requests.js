@@ -1,4 +1,4 @@
-/*
+f; /*
 Make fetch requests in the browser for each of the following tasks.
 Paste your code for fetch requests here once you finish each task.
 */
@@ -7,19 +7,23 @@ Paste your code for fetch requests here once you finish each task.
 
 // Your code here
 
-
+fetch("/products")
+  .then((res) => {
+    console.log(res);
+    console.log("response status ", res.status);
+    return res.text();
+  })
+  .then((data) => {
+    console.log("response text after .then ", data);
+  });
 
 /* ====== 2. Print true if the status of the response was successful ====== */
 
 // Your code here
 
-
-
 /* =================== 3. Print the Content-Type Header =================== */
 
 // Your code here
-
-
 
 /* ============== 4. Print the body of the response as text =============== */
 

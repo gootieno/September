@@ -46,17 +46,18 @@ function liftWeights(timeLeft) {
   });
 }
 
-function workout(totalTime) {
-  // refactor your code from phase 1
-  // Your code here
-  stretch(totalTime)
-    .then((timeLeftAfterStretching) => runOnTreadmill(timeLeftAfterStretching))
-    .then((timeAfterRunning) => liftWeights(timeAfterRunning))
-    .then((timeLeft) =>
-      console.log(`done working out with ${timeLeft / 1000} seconds left.`)
-    )
-    .catch((error) => console.log(error));
-}
+// function workout(totalTime) {
+//   // refactor your code from phase 1
+//   // Your code here
+//   stretch(totalTime)
+//     .then((timeLeftAfterStretching) => runOnTreadmill(timeLeftAfterStretching))
+//     .then((timeAfterRunning) => liftWeights(timeAfterRunning))
+//     .then((timeLeft) =>
+//       console.log(`done working out with ${timeLeft / 1000} seconds left.`)
+//     )
+//     .catch((error) => console.log(error));
+// }
+
 
 /* ============================ TEST YOUR CODE ============================
 
