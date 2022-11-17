@@ -126,6 +126,18 @@ const server = http.createServer((req, res) => {
       if (urlParts.length === 3) {
         const dogId = urlParts[2];
         // Your code here
+
+        const dogIndex = dogs.findIndex((dog) => dog.dogId == dogId);
+
+        console.log("dog index", dogIndex);
+        console.log("dogs before splice ", dogs);
+        dogs.splice(dogIndex, 1);
+
+        console.log("dogs after splice", dogs);
+
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(JSON.stringify("Successfully deleted"));
       }
     }
 
