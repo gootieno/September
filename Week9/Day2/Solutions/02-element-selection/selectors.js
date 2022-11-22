@@ -1,38 +1,40 @@
 const select = () => {
     /* Write queries for each of the following */
 
-    /* Section 1 */
-    // 1. Get all seeded fruit elements
-    // Your code here
-    
-    // 2. Get all seedless fruit elements
-    // Your code here
+    /* PART 1 */
+    // Get all seeded fruit elements
+    const seeded = document.getElementsByClassName("seed");
+    // console.log(seeded);
 
-    // 3. Get first seedless fruit element
-    // Your code here
+    // Get all seedless fruit elements
+    const seedless = document.querySelectorAll(".seedless");
 
-    /* Section 2 */
-    // 4. Get inner span with text "you"
-    // Your code here
+    // Get first seedless fruit element
+    const firstSeedless = document.querySelector(".seedless");
 
-    // 5. Get all children of element "wrapper"
-    // Your code here
+    /* PART 2 */
+    // Get inner span with text "you"
+    const you = document.getElementsByTagName("span");
 
-    // 6. Get all odd number list items in the list
-    // Your code here
+    // Get all children of element "wrapper"
+    const wrapperChildren = document.getElementById("wrapper").children;
 
-    // 7. Get all even number list items in the list
-    // Your code here
+    // Get all odd number list items in the list
+    const odds = document.getElementsByClassName("odd");
 
-    /* Section 3 */
-    // 8. Get all tech companies without a class name
-    // Your code here
+    // Get all even number list items in the list
+    // const evens = Array.from(document.querySelectorAll("#two > ol > li")).filter(node => node.className !== "odd");
+    const evens = Array.from(document.getElementsByTagName('ol')[0].children).filter(ele => ele.className !== 'odd');
+    console.log(evens)
+    /* PART 3 */
+    // Get all tech companies without a class name
+    const nameless = document.querySelector("a");
 
-    // 9. Get "Amazon" list element
-    // Your code here
+    // Get "Amazon" list element
+    const amazon = document.getElementsByClassName("shopping");
 
-    // 10. Get all unicorn list elements (not the image element)
-    // Your code here
+    // Get all unicorn list elements (not the image element)
+    const unicorns = document.querySelectorAll("#three > ul")[0].children;
 }
 
 window.onload = select;
