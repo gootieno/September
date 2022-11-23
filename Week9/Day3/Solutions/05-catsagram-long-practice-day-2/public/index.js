@@ -5,7 +5,7 @@
 // it like a promise. (.then or await)
 
 // PHASE 2: UPVOTE / DOWNVOTE Variables
-// created global variables (will refactor) for resetting  upvote and downvote
+// created global variables for resetting  upvote and downvote
 let upVoteCount = 0;
 let downVoteCount = 0;
 
