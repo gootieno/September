@@ -36,7 +36,7 @@ const buildPage = () => {
   newCatButton.style.marginBottom = "5px";
   newCatButton.innerText = "Get New Cat";
   // giving our body some styling
-  body.style.width = "100&";
+  body.style.width = "100%";
   body.style.display = "flex";
   body.style.flexDirection = "column";
   body.style.alignItems = "center";
@@ -150,8 +150,8 @@ const voteButtons = () => {
   const upVote = document.createElement("button");
   const downVote = document.createElement("button");
 
-  upVote.innerHTML = "Up Vote 0";
-  downVote.innerHTML = "Down Vote 0";
+  upVote.innerText = "Up Vote 0";
+  downVote.innerText = "Down Vote 0";
 
   // give the buttons attributes for grouping and unique selection
   upVote.setAttribute("id", "up-vote");
